@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Splitter</h1>
+    </div>
+    <div class="calc-container">
+      <!-- CHOOSE SECTION -->
+      <div class="choose-container">
+        <form>
+          <div class="bill" id="bill-input">
+            <p class="input-title">Bill</p>
+            <div class="input" id="input">
+              <h2>$</h2>
+              <input
+                id="input-field"
+                type="text"
+                placeholder="0"
+                onfocusout="removeBorder()"
+              />
+            </div>
+          </div>
+          <p class="select-title">Select Tip %</p>
+          <div class="select-tip-input-container">
+            <button class="btn" id="btn5" value="5">5%</button>
+            <button class="btn" id="btn10" value="10">10%</button>
+            <button class="btn" id="btn15" value="15">15%</button>
+            <button class="btn" id="btn25" value="25">25%</button>
+            <button class="btn" id="btn50" value="50">50%</button>
+            <input
+              type="text"
+              class="btn-input"
+              id="btn-custom"
+              placeholder="Custom"
+              onfocusout="getCustomPercent()"
+            />
+          </div>
+          <div class="bill number-of-people-input"  >
+            <p class="input-title">Number of People <span class="input-title zero-text" id="zero-text" >Can't be zero</span></p>
+            <div class="input" id="number-of-people-input">
+              <h2>&#128100</h2>
+              <input
+                id="number-of-people-input-field"
+                type="text"
+                placeholder="0"
+                onfocusout="removeBorderPeople()"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- RESULT SECTION -->
+      <div class="result-container">
+        <div class="tip-results">
+          <div class="tip-amount">
+            <p>Tip Amount</p>
+            <h1 id="tip-amount">$0.00</h1>
+          </div>
+          <div class="tip-total">
+            <p>Total</p>
+            <h1 id="tip-total">$0.00</h1>
+          </div>
+        </div>
+        <div class="reset-btn">
+          <button id="reset" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tom</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
