@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
+/* == Colors == */
 :root {
   --very-dark-cyan: hsl(183, 100%, 15%);
   --dark-grayish-cyan-1: hsl(186, 14%, 35%);
