@@ -24,6 +24,7 @@ function removeBorderPeople() {
 
 inputField.addEventListener("focus", () => {
   billInputContainer.style.border = "2px solid hsl(172, 67%, 45%)";
+
   console.log("focus");
 });
 
@@ -50,9 +51,10 @@ btn.forEach(button => {
     e.preventDefault();
     let buttonValue = parseInt(e.target.value);
     let numberOfPeople = parseInt(peopleInputField.value);
+    inputField.value = inputField.value.replace(/,/g, ".");
     let bill = parseFloat(inputField.value);
 
-    if (numberOfPeople === 0) {
+    if (numberOfPeople === 0 || peopleInputField.value.length === 0) {
       zeroText.style.display = "inline-block";
     } else {
       calculation(bill, numberOfPeople, buttonValue);

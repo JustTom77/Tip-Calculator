@@ -297,3 +297,90 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* == MOBILE 375px == */
+
+@media (max-width: 376px) {
+  .attribution {
+    display: none;
+  }
+  .title {
+    margin-top: 3em;
+  }
+  .calc-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .choose-container {
+    width: 70%;
+  }
+  form {
+    width: 300px;
+  }
+  #input-field {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .select-tip-input-container button {
+    width: 47%;
+    font-size: 1.5rem;
+    padding: 0.3em 0.3em;
+  }
+  .select-tip-input-container input {
+    width: 47%;
+    font-size: 1.5rem;
+    padding: 0.3em 0.9em;
+  }
+  .input-title {
+    font-size: 1.2rem;
+  }
+  .input input {
+    font-size: 1.5rem;
+  }
+  .input h2 {
+    font-size: 2rem;
+  }
+  .input input::placeholder {
+    font-size: 1.7rem;
+  }
+  .select-title {
+    font-size: 1.2rem;
+  }
+  #number-of-people-input-field {
+    width: 100%;
+  }
+  .result-container {
+    width: 300px;
+    height: 30%;
+    padding: 1em 1.5em;
+    margin-top: -2em;
+  }
+  .tip-amount {
+    font-size: 1.1rem;
+  }
+  .tip-amount h1 {
+    font-size: 2rem;
+  }
+  .tip-total h1 {
+    font-size: 2rem;
+  }
+  .tip-total {
+    margin-top: -1em;
+  }
+
+  .reset-btn {
+    margin-top: 0.5em;
+  }
+  .input-title.zero-text {
+    height: 10%;
+    position: absolute;
+    right: 3%;
+
+    font-size: 0.8rem;
+  }
+}
